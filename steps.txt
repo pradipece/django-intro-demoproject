@@ -1,0 +1,20 @@
+come to project directory
+cd <project_path>
+pipenv shell
+pipenv install django
+django-admin startproject demo .
+python manage.py runserver 
+
+to turn off server press Ctrl + C 
+
+python manage.py startapp website
+    - include the app (website) inside the settings.py
+    - create urls.py inside website directory (app directory)
+    - add all functionalities in the views.py file inside app directory
+
+link website/urls.py with the main projects urls.py
+
+to create an admin user 
+    python manage.py migrate
+    python manage.py createsuperuser
+    visit /admin url 
